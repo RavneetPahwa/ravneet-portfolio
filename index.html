@@ -1,229 +1,399 @@
-RSP·
-About Skills Projects Experience Certifications Contact
-Résumé  
-Data Analytics · Business Intelligence · Healthcare
-
-Ravneet Singh Pahwa
-
-Senior Data Analyst
-BI Developer
-Healthcare Analytics Consultant
-I turn claims, provider, and clinical data into dashboards that payer, provider, and pharma leaders actually trust — 16+ years building reporting platforms across Healthcare, Health Insurance, and Life Sciences, from raw pipelines to the KPI on an executive's screen.
-
-Download résumé View projects
-16+years experience
-4industries served
-7featured builds
-patient_volume_ds — LIVE
-CLAIMS/HR2,481
-HEDIS SCORE91.4
-ETL LAG00:04m
-About
-
-Twelve years of turning messy operational data into decisions.
-
-I'm a data analyst and BI developer who has spent the last 16+ years inside Healthcare, Health Insurance, and Life Sciences organizations — building the pipelines, models, and dashboards that let payer, provider, and pharma teams make decisions on numbers they can defend.
-
-My work spans the full path from source system to boardroom slide: designing ETL and data warehouse layers, modeling claims and provider data, and leading several Tableau-to-Power BI migrations that preserved KPI accuracy while improving performance and governance.
-
-Experience16+ years in analytics & BI
-IndustriesHealthcare (Payer & Provider), Health Insurance, Life Sciences
-Core toolsPower BI, Tableau, SQL, Alteryx, Snowflake, Microsoft Fabric
-FocusData Modeling, ETL & Data Warehousing, Business Intelligence
-Technical Skills
-
-The stack, by function.
-
-BIBI & Visualization
-
-Power BITableauSSRSCognos
-DBDatabases
-
-SQL ServerOracleRedshiftDatabricks SQLSnowflake
-CLCloud
-
-AzureGoogle Cloud PlatformMicrosoft Fabric
-ETETL
-
-AlteryxInformaticaDataStageAzure Data FactoryFabric Pipelines
-PRProgramming
-
-SQLPythonDAXPower Query (M)
-Featured Projects
-
-Dashboards built on real business problems.
-
-Built on sample or de-identified data — architecture, logic, and KPIs reflect production patterns.
-
-ADMIT RATE 18.2%ALOS 4.1dREADMIT 12.4%
-Healthcare Executive Dashboard
-
-Business problem — Hospital leadership lacked a single view of volume, revenue, and quality metrics across facilities, forcing manual month-end roll-ups.
-
-Data sources — EHR admissions/discharges, patient accounting, quality registries.
-
-ETL process — Azure Data Factory pipelines landing raw feeds, transformed through staging → curated layers in a Lakehouse.
-
-Data model — Star schema: fact_encounters linked to dim_patient, dim_facility, dim_payer, dim_date.
-
-KPIs — Admit rate, average length of stay, readmission rate, net revenue per encounter.
-
-Technologies — Power BI, Azure Data Factory, SQL Server, DAX.
-
-SLA HIT 96.7%QUEUE —12%THROUGHPUT +9%
-Operational Dashboard
-
-Business problem — Operations managers needed near-real-time visibility into queue backlogs and SLA breaches across shifts.
-
-Data sources — Ticketing system exports, workforce scheduling, call-center logs.
-
-ETL process — Matillion orchestrating hourly loads into Snowflake, with incremental change capture.
-
-Data model — Snowflake schema separating shift, agent, and queue dimensions from ticket-level facts.
-
-KPIs — SLA attainment, average queue time, throughput per shift.
-
-Technologies — Tableau, Snowflake, Matillion, SQL.
-
-HEDIS 91.4DENIAL 6.8%CLEAN CLAIM 93%
-Claims & HEDIS Reporting Dashboard
-
-Business problem — Health plan quality teams needed automated HEDIS measure tracking alongside claims denial trending ahead of NCQA submission.
-
-Data sources — Claims (837/835), enrollment/eligibility, HEDIS measure engine output.
-
-ETL process — Informatica pipelines standardizing claim codes and mapping to measure specifications.
-
-Data model — fact_claims and fact_measure_compliance joined on member and measurement-year dimensions.
-
-KPIs — HEDIS composite score, denial rate, clean claim rate.
-
-Technologies — Power BI, Informatica, Oracle, DAX.
-
-RISK SCORE 1.12ED VISITS —7%GAPS CLOSED +15%
-Population Health Dashboard
-
-Business problem — Care management teams needed to identify rising-risk members and track care-gap closure across attributed populations.
-
-Data sources — Claims, clinical/EHR extracts, risk-adjustment scores, care-gap registries.
-
-ETL process — Databricks notebooks handling risk-score computation and gap logic in PySpark/SQL.
-
-Data model — Member-centric star schema with slowly changing dimensions for risk tier history.
-
-KPIs — Average risk score, ED utilization rate, care-gap closure rate.
-
-Technologies — Power BI, Databricks, Python, SQL.
-
-ADHERENCE 84%GENERIC 76%PMPM $38.20
-Pharmacy Analytics Dashboard
-
-Business problem — PBM stakeholders needed visibility into medication adherence, generic substitution rates, and per-member drug spend trends.
-
-Data sources — Pharmacy claims, formulary tables, member eligibility.
-
-ETL process — Azure Data Factory + Fabric pipelines refreshing nightly, with adherence logic computed in DAX and Python.
-
-Data model — fact_pharmacy_claims joined to dim_drug, dim_member, dim_date.
-
-KPIs — Medication adherence (PDC), generic dispensing rate, PMPM drug cost.
-
-Technologies — Power BI, Microsoft Fabric, Azure Data Factory, Python.
-
-MIGRATED 140 TBDOWNTIME <2hCOST —31%
-Legacy-to-Cloud Migration
-
-Business problem — An on-prem SQL Server warehouse was hitting scale and cost limits; leadership needed a low-risk path to the cloud without breaking downstream reports.
-
-Data sources — On-prem SQL Server warehouse, SSIS packages, existing SSRS/Power BI reports.
-
-ETL process — Phased migration using Azure Data Factory, with parallel-run validation against legacy outputs before cutover.
-
-Data model — Re-platformed star schemas onto Azure Synapse/Databricks with backward-compatible views for existing reports.
-
-KPIs — Data volume migrated, cutover downtime, infrastructure cost reduction.
-
-Technologies — Azure Data Factory, Databricks, SQL Server, Power BI.
-
-QUERY TIME —68%TABLES 210USERS ONBOARDED 320
-Google Cloud Data Warehouse
-
-Business problem — Finance and analytics teams needed a governed, query-fast warehouse to replace scattered spreadsheets and siloed extracts.
-
-Data sources — ERP/finance exports, CRM data, third-party claims feeds.
-
-ETL process — BigQuery-native pipelines with dbt-style transformations and scheduled loads from Cloud Storage.
-
-Data model — Dimensional model in BigQuery with partitioned, clustered fact tables for cost-efficient querying.
-
-KPIs — Query latency reduction, tables migrated, active self-service users.
-
-Technologies — Google Cloud Platform, BigQuery, SQL, Looker/Power BI.
-
-Experience
-
-Roles, in brief.
-
-Client names omitted — industries and scope shown instead.
-
-Sr. Power BI Consultant — National Health Insurer (Payer)
-
-01/2025 – Present
-Led migration of enterprise Tableau dashboards to Power BI, validating KPI accuracy while improving performance.
-Built governed semantic models on Snowflake and Microsoft Fabric for provider, claims, and credentialing analytics.
-Implemented Incremental Refresh, Row-Level Security, and Alteryx pipelines for provider data reconciliation.
-Sr. Power BI / Data Analyst — Regional Health Plan (Payer)
-
-01/2024 – 12/2024
-Built provider and claims data models integrating credentialing, contracting, and demographic sources.
-Implemented Row-Level Security to protect PHI and enforce role-based access across dashboards.
-Sr. Power BI Consultant — Global Pharmaceutical Company
-
-09/2023 – 12/2023
-Designed dimensional data models integrating provider, claims, and demographic datasets.
-Built drill-down dashboards for provider performance by specialty, region, and value-based contract tier.
-Power BI Lead — National Health Insurer (Payer)
-
-03/2023 – 08/2023
-Led a cross-functional BI team delivering enterprise dashboards to 500+ users across clinical and provider domains.
-Embedded Power BI into SharePoint with SSO for streamlined executive access; delivered patient/provider dashboards from Epic EHR data.
-Power BI Specialist — Payer Claims Analytics (Life Sciences)
-
-06/2022 – 02/2023
-Built payer-wise claims executive dashboards, joining claims KPIs with provider/territory segmentation.
-Migrated Tableau dashboards to Power BI, optimizing view queries and DAX for performance.
-Power BI Lead — P&C Insurance Carrier
-
-06/2021 – 05/2022
-Owned solution design, data modeling, and ETL for claims data marts on Snowflake and SQL Server.
-Built claims-status dashboards and KPIs for coverage, reserves, and closure timeliness across personal and commercial lines.
-Power BI Lead / Developer — Pharmaceutical Company
-
-08/2019 – 05/2021
-Built BI solutions for field representatives on a mobile platform, serving 500+ users.
-Provided technical guidance on Power BI design, development, and performance troubleshooting.
-Earlier Experience
-
-2006 – 2019
-BI developer and lead roles across pharmaceutical and health-insurance organizations, spanning IBM Cognos (author, architect, and admin), Tableau, QlikView, SAS, and DataStage/Informatica ETL.
-Delivered custom reporting for Commercial, Medicaid, and Managed Markets functions, led a Cognos platform upgrade, and supported enterprise data warehouse operations.
-Certifications
-
-Credentials.
-
-MicrosoftPower BI Data Analyst Certified (PL-300)
-TableauTableau Desktop Certified Associate
-IBMCertified Solution Developer – InfoSphere DataStage v8.5
-IBMCognos Certified BI Author
-IBMCognos ReportNet Certified
-ITILManaged Services ITIL Certified
-CognizantCertified Professional – Data Warehousing
-CognizantCertified Professional – Oracle
-Contact
-
-Let's talk data.
-
-Open to senior analyst, BI, and healthcare analytics consulting roles.
-
-Email LinkedIn GitHub Résumé
-© Ravneet Singh Pahwa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravneet Singh Pahwa — Senior Data Analyst &amp; Healthcare Analytics Consultant</title>
+<meta name="description" content="Portfolio of Ravneet Singh Pahwa — Senior Data Analyst, BI Developer, and Healthcare Analytics Consultant. 16+ years across Healthcare, Health Insurance, and Life Sciences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- scroll progress trace -->
+<svg id="trace" viewBox="0 0 100 3" preserveAspectRatio="none" aria-hidden="true">
+  <path id="trace-path" d="M0,1.5 L100,1.5" />
+</svg>
+
+<header class="nav" id="top">
+  <a class="nav__mark" href="#top">RSP<span>·</span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__cta" href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Résumé</a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <div class="hero__intro">
+      <p class="eyebrow">Data Analytics · Business Intelligence · Healthcare</p>
+      <h1 class="hero__name">Ravneet Singh Pahwa</h1>
+      <ul class="hero__titles" id="title-rotator">
+        <li>Senior Data Analyst</li>
+        <li>BI Developer</li>
+        <li>Healthcare Analytics Consultant</li>
+      </ul>
+      <p class="hero__lede">
+        I turn claims, provider, and clinical data into dashboards that payer, provider,
+        and pharma leaders actually trust — 16+ years building reporting platforms across
+        Healthcare, Health Insurance, and Life Sciences, from raw pipelines
+        to the KPI on an executive's screen.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Download résumé</a>
+        <a class="btn btn--ghost" href="#projects">View projects</a>
+      </div>
+      <div class="hero__stats">
+        <div><span class="stat-num">16+</span><span class="stat-label">years experience</span></div>
+        <div><span class="stat-num">4</span><span class="stat-label">industries served</span></div>
+        <div><span class="stat-num">7</span><span class="stat-label">featured builds</span></div>
+      </div>
+    </div>
+
+    <div class="hero__monitor" aria-hidden="true">
+      <div class="monitor">
+        <div class="monitor__head">
+          <span class="monitor__dot"></span>
+          <span class="monitor__title">patient_volume_ds — LIVE</span>
+        </div>
+        <svg class="monitor__trace" viewBox="0 0 400 120" preserveAspectRatio="none">
+          <g class="grid">
+            <line x1="0" y1="30" x2="400" y2="30"/>
+            <line x1="0" y1="60" x2="400" y2="60"/>
+            <line x1="0" y1="90" x2="400" y2="90"/>
+          </g>
+          <path class="pulse" d="M0,60 L40,60 L55,60 L65,20 L75,100 L85,60 L100,60 L140,60 L155,60 L165,20 L175,100 L185,60 L200,60 L240,60 L255,60 L265,20 L275,100 L285,60 L300,60 L340,60 L355,60 L365,20 L375,100 L385,60 L400,60"/>
+        </svg>
+        <div class="monitor__readouts">
+          <div><span class="ro-label">CLAIMS/HR</span><span class="ro-value">2,481</span></div>
+          <div><span class="ro-label">HEDIS SCORE</span><span class="ro-value">91.4</span></div>
+          <div><span class="ro-label">ETL LAG</span><span class="ro-value">00:04m</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section__head">
+    <p class="eyebrow">About</p>
+    <h2>Twelve years of turning messy operational data into decisions.</h2>
+  </div>
+  <div class="about__grid">
+    <div class="about__copy">
+      <p>
+        I'm a data analyst and BI developer who has spent the last 16+ years inside
+        Healthcare, Health Insurance, and Life Sciences organizations — building the
+        pipelines, models, and dashboards that let payer, provider, and pharma teams
+        make decisions on numbers they can defend.
+      </p>
+      <p>
+        My work spans the full path from source system to boardroom slide: designing
+        ETL and data warehouse layers, modeling claims and provider data, and leading
+        several Tableau-to-Power BI migrations that preserved KPI accuracy while
+        improving performance and governance.
+      </p>
+    </div>
+    <ul class="about__facts">
+      <li><span>Experience</span>16+ years in analytics &amp; BI</li>
+      <li><span>Industries</span>Healthcare (Payer &amp; Provider), Health Insurance, Life Sciences</li>
+      <li><span>Core tools</span>Power BI, Tableau, SQL, Alteryx, Snowflake, Microsoft Fabric</li>
+      <li><span>Focus</span>Data Modeling, ETL &amp; Data Warehousing, Business Intelligence</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--muted" id="skills">
+  <div class="section__head">
+    <p class="eyebrow">Technical Skills</p>
+    <h2>The stack, by function.</h2>
+  </div>
+  <div class="skills__grid">
+    <div class="skill-card">
+      <h3><span class="tag-idx">BI</span>BI &amp; Visualization</h3>
+      <div class="pills">
+        <span>Power BI</span><span>Tableau</span><span>SSRS</span><span>Cognos</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">DB</span>Databases</h3>
+      <div class="pills">
+        <span>SQL Server</span><span>Oracle</span><span>Redshift</span><span>Databricks SQL</span><span>Snowflake</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">CL</span>Cloud</h3>
+      <div class="pills">
+        <span>Azure</span><span>Google Cloud Platform</span><span>Microsoft Fabric</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">ET</span>ETL</h3>
+      <div class="pills">
+        <span>Alteryx</span><span>Informatica</span><span>DataStage</span><span>Azure Data Factory</span><span>Fabric Pipelines</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">PR</span>Programming</h3>
+      <div class="pills">
+        <span>SQL</span><span>Python</span><span>DAX</span><span>Power Query (M)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section__head">
+    <p class="eyebrow">Featured Projects</p>
+    <h2>Dashboards built on real business problems.</h2>
+    <p class="section__note">Built on sample or de-identified data — architecture, logic, and KPIs reflect production patterns.</p>
+  </div>
+
+  <div class="projects__grid">
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>ADMIT RATE <b>18.2%</b></span><span>ALOS <b>4.1d</b></span><span>READMIT <b>12.4%</b></span>
+      </div>
+      <h3>Healthcare Executive Dashboard</h3>
+      <p class="proj-field"><b>Business problem</b> — Hospital leadership lacked a single view of volume, revenue, and quality metrics across facilities, forcing manual month-end roll-ups.</p>
+      <p class="proj-field"><b>Data sources</b> — EHR admissions/discharges, patient accounting, quality registries.</p>
+      <p class="proj-field"><b>ETL process</b> — Azure Data Factory pipelines landing raw feeds, transformed through staging → curated layers in a Lakehouse.</p>
+      <p class="proj-field"><b>Data model</b> — Star schema: fact_encounters linked to dim_patient, dim_facility, dim_payer, dim_date.</p>
+      <p class="proj-field"><b>KPIs</b> — Admit rate, average length of stay, readmission rate, net revenue per encounter.</p>
+      <p class="proj-field"><b>Technologies</b> — Power BI, Azure Data Factory, SQL Server, DAX.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: executive-dashboard.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>SLA HIT <b>96.7%</b></span><span>QUEUE <b>—12%</b></span><span>THROUGHPUT <b>+9%</b></span>
+      </div>
+      <h3>Operational Dashboard</h3>
+      <p class="proj-field"><b>Business problem</b> — Operations managers needed near-real-time visibility into queue backlogs and SLA breaches across shifts.</p>
+      <p class="proj-field"><b>Data sources</b> — Ticketing system exports, workforce scheduling, call-center logs.</p>
+      <p class="proj-field"><b>ETL process</b> — Matillion orchestrating hourly loads into Snowflake, with incremental change capture.</p>
+      <p class="proj-field"><b>Data model</b> — Snowflake schema separating shift, agent, and queue dimensions from ticket-level facts.</p>
+      <p class="proj-field"><b>KPIs</b> — SLA attainment, average queue time, throughput per shift.</p>
+      <p class="proj-field"><b>Technologies</b> — Tableau, Snowflake, Matillion, SQL.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: operational-dashboard.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>HEDIS <b>91.4</b></span><span>DENIAL <b>6.8%</b></span><span>CLEAN CLAIM <b>93%</b></span>
+      </div>
+      <h3>Claims &amp; HEDIS Reporting Dashboard</h3>
+      <p class="proj-field"><b>Business problem</b> — Health plan quality teams needed automated HEDIS measure tracking alongside claims denial trending ahead of NCQA submission.</p>
+      <p class="proj-field"><b>Data sources</b> — Claims (837/835), enrollment/eligibility, HEDIS measure engine output.</p>
+      <p class="proj-field"><b>ETL process</b> — Informatica pipelines standardizing claim codes and mapping to measure specifications.</p>
+      <p class="proj-field"><b>Data model</b> — fact_claims and fact_measure_compliance joined on member and measurement-year dimensions.</p>
+      <p class="proj-field"><b>KPIs</b> — HEDIS composite score, denial rate, clean claim rate.</p>
+      <p class="proj-field"><b>Technologies</b> — Power BI, Informatica, Oracle, DAX.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: hedis-dashboard.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>RISK SCORE <b>1.12</b></span><span>ED VISITS <b>—7%</b></span><span>GAPS CLOSED <b>+15%</b></span>
+      </div>
+      <h3>Population Health Dashboard</h3>
+      <p class="proj-field"><b>Business problem</b> — Care management teams needed to identify rising-risk members and track care-gap closure across attributed populations.</p>
+      <p class="proj-field"><b>Data sources</b> — Claims, clinical/EHR extracts, risk-adjustment scores, care-gap registries.</p>
+      <p class="proj-field"><b>ETL process</b> — Databricks notebooks handling risk-score computation and gap logic in PySpark/SQL.</p>
+      <p class="proj-field"><b>Data model</b> — Member-centric star schema with slowly changing dimensions for risk tier history.</p>
+      <p class="proj-field"><b>KPIs</b> — Average risk score, ED utilization rate, care-gap closure rate.</p>
+      <p class="proj-field"><b>Technologies</b> — Power BI, Databricks, Python, SQL.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: population-health.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>ADHERENCE <b>84%</b></span><span>GENERIC <b>76%</b></span><span>PMPM <b>$38.20</b></span>
+      </div>
+      <h3>Pharmacy Analytics Dashboard</h3>
+      <p class="proj-field"><b>Business problem</b> — PBM stakeholders needed visibility into medication adherence, generic substitution rates, and per-member drug spend trends.</p>
+      <p class="proj-field"><b>Data sources</b> — Pharmacy claims, formulary tables, member eligibility.</p>
+      <p class="proj-field"><b>ETL process</b> — Azure Data Factory + Fabric pipelines refreshing nightly, with adherence logic computed in DAX and Python.</p>
+      <p class="proj-field"><b>Data model</b> — fact_pharmacy_claims joined to dim_drug, dim_member, dim_date.</p>
+      <p class="proj-field"><b>KPIs</b> — Medication adherence (PDC), generic dispensing rate, PMPM drug cost.</p>
+      <p class="proj-field"><b>Technologies</b> — Power BI, Microsoft Fabric, Azure Data Factory, Python.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: pharmacy-analytics.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>MIGRATED <b>140 TB</b></span><span>DOWNTIME <b>&lt;2h</b></span><span>COST <b>—31%</b></span>
+      </div>
+      <h3>Legacy-to-Cloud Migration</h3>
+      <p class="proj-field"><b>Business problem</b> — An on-prem SQL Server warehouse was hitting scale and cost limits; leadership needed a low-risk path to the cloud without breaking downstream reports.</p>
+      <p class="proj-field"><b>Data sources</b> — On-prem SQL Server warehouse, SSIS packages, existing SSRS/Power BI reports.</p>
+      <p class="proj-field"><b>ETL process</b> — Phased migration using Azure Data Factory, with parallel-run validation against legacy outputs before cutover.</p>
+      <p class="proj-field"><b>Data model</b> — Re-platformed star schemas onto Azure Synapse/Databricks with backward-compatible views for existing reports.</p>
+      <p class="proj-field"><b>KPIs</b> — Data volume migrated, cutover downtime, infrastructure cost reduction.</p>
+      <p class="proj-field"><b>Technologies</b> — Azure Data Factory, Databricks, SQL Server, Power BI.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: migration-project.png"></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card__kpis">
+        <span>QUERY TIME <b>—68%</b></span><span>TABLES <b>210</b></span><span>USERS ONBOARDED <b>320</b></span>
+      </div>
+      <h3>Google Cloud Data Warehouse</h3>
+      <p class="proj-field"><b>Business problem</b> — Finance and analytics teams needed a governed, query-fast warehouse to replace scattered spreadsheets and siloed extracts.</p>
+      <p class="proj-field"><b>Data sources</b> — ERP/finance exports, CRM data, third-party claims feeds.</p>
+      <p class="proj-field"><b>ETL process</b> — BigQuery-native pipelines with dbt-style transformations and scheduled loads from Cloud Storage.</p>
+      <p class="proj-field"><b>Data model</b> — Dimensional model in BigQuery with partitioned, clustered fact tables for cost-efficient querying.</p>
+      <p class="proj-field"><b>KPIs</b> — Query latency reduction, tables migrated, active self-service users.</p>
+      <p class="proj-field"><b>Technologies</b> — Google Cloud Platform, BigQuery, SQL, Looker/Power BI.</p>
+      <div class="proj-shot" data-caption="Replace with screenshot: gcp-warehouse.png"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section--muted" id="experience">
+  <div class="section__head">
+    <p class="eyebrow">Experience</p>
+    <h2>Roles, in brief.</h2>
+    <p class="section__note">Client names omitted — industries and scope shown instead.</p>
+  </div>
+  <ol class="timeline">
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Sr. Power BI Consultant — National Health Insurer (Payer)</h3><span>01/2025 – Present</span></div>
+        <ul>
+          <li>Led migration of enterprise Tableau dashboards to Power BI, validating KPI accuracy while improving performance.</li>
+          <li>Built governed semantic models on Snowflake and Microsoft Fabric for provider, claims, and credentialing analytics.</li>
+          <li>Implemented Incremental Refresh, Row-Level Security, and Alteryx pipelines for provider data reconciliation.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Sr. Power BI / Data Analyst — Regional Health Plan (Payer)</h3><span>01/2024 – 12/2024</span></div>
+        <ul>
+          <li>Built provider and claims data models integrating credentialing, contracting, and demographic sources.</li>
+          <li>Implemented Row-Level Security to protect PHI and enforce role-based access across dashboards.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Sr. Power BI Consultant — Global Pharmaceutical Company</h3><span>09/2023 – 12/2023</span></div>
+        <ul>
+          <li>Designed dimensional data models integrating provider, claims, and demographic datasets.</li>
+          <li>Built drill-down dashboards for provider performance by specialty, region, and value-based contract tier.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Power BI Lead — National Health Insurer (Payer)</h3><span>03/2023 – 08/2023</span></div>
+        <ul>
+          <li>Led a cross-functional BI team delivering enterprise dashboards to 500+ users across clinical and provider domains.</li>
+          <li>Embedded Power BI into SharePoint with SSO for streamlined executive access; delivered patient/provider dashboards from Epic EHR data.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Power BI Specialist — Payer Claims Analytics (Life Sciences)</h3><span>06/2022 – 02/2023</span></div>
+        <ul>
+          <li>Built payer-wise claims executive dashboards, joining claims KPIs with provider/territory segmentation.</li>
+          <li>Migrated Tableau dashboards to Power BI, optimizing view queries and DAX for performance.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Power BI Lead — P&amp;C Insurance Carrier</h3><span>06/2021 – 05/2022</span></div>
+        <ul>
+          <li>Owned solution design, data modeling, and ETL for claims data marts on Snowflake and SQL Server.</li>
+          <li>Built claims-status dashboards and KPIs for coverage, reserves, and closure timeliness across personal and commercial lines.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Power BI Lead / Developer — Pharmaceutical Company</h3><span>08/2019 – 05/2021</span></div>
+        <ul>
+          <li>Built BI solutions for field representatives on a mobile platform, serving 500+ users.</li>
+          <li>Provided technical guidance on Power BI design, development, and performance troubleshooting.</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="timeline__mark"></div>
+      <div class="timeline__body">
+        <div class="timeline__row"><h3>Earlier Experience</h3><span>2006 – 2019</span></div>
+        <ul>
+          <li>BI developer and lead roles across pharmaceutical and health-insurance organizations, spanning IBM Cognos (author, architect, and admin), Tableau, QlikView, SAS, and DataStage/Informatica ETL.</li>
+          <li>Delivered custom reporting for Commercial, Medicaid, and Managed Markets functions, led a Cognos platform upgrade, and supported enterprise data warehouse operations.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certifications">
+  <div class="section__head">
+    <p class="eyebrow">Certifications</p>
+    <h2>Credentials.</h2>
+  </div>
+  <div class="cert__grid">
+    <div class="cert-card"><span class="cert-tag">Microsoft</span>Power BI Data Analyst Certified (PL-300)</div>
+    <div class="cert-card"><span class="cert-tag">Tableau</span>Tableau Desktop Certified Associate</div>
+    <div class="cert-card"><span class="cert-tag">IBM</span>Certified Solution Developer – InfoSphere DataStage v8.5</div>
+    <div class="cert-card"><span class="cert-tag">IBM</span>Cognos Certified BI Author</div>
+    <div class="cert-card"><span class="cert-tag">IBM</span>Cognos ReportNet Certified</div>
+    <div class="cert-card"><span class="cert-tag">ITIL</span>Managed Services ITIL Certified</div>
+    <div class="cert-card"><span class="cert-tag">Cognizant</span>Certified Professional – Data Warehousing</div>
+    <div class="cert-card"><span class="cert-tag">Cognizant</span>Certified Professional – Oracle</div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<footer class="contact" id="contact">
+  <div class="contact__inner">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk data.</h2>
+      <p>Open to senior analyst, BI, and healthcare analytics consulting roles.</p>
+    </div>
+    <div class="contact__links">
+      <a href="mailto:ravneet.pahwa@example.com">Email</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Résumé</a>
+    </div>
+  </div>
+  <p class="contact__foot">© <span id="year"></span> Ravneet Singh Pahwa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
