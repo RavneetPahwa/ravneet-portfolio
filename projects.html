@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ravneet Singh Pahwa</title>
+<meta name="description" content="Featured healthcare and payer BI projects by Ravneet Singh Pahwa — Power BI, Tableau, and cloud data warehouse builds.">
+<meta property="og:title" content="Projects — Ravneet Singh Pahwa">
+<meta property="og:description" content="Featured healthcare and payer BI projects — Power BI, Tableau, and cloud data warehouse builds.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__mark" href="index.html">RSP<span>·</span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="is-active">Projects</a>
+    <a href="stack.html">Stack</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav__kbd" data-cmdk-open type="button"><span>Search</span><kbd>&#8984;K</kbd></button>
+  <a class="nav__cta" href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Résumé</a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="page-hero">
+  <p class="eyebrow">Featured Projects</p>
+  <h1>Dashboards built on real business problems.</h1>
+  <p class="section__note">Built on sample or de-identified data — architecture, logic, and KPIs reflect production patterns. Click a card to see the full build-out.</p>
+</div>
+
+<section class="section section--tight">
+  <div class="projects__grid">
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>ADMIT RATE <b>18.2%</b></span><span>ALOS <b>4.1d</b></span><span>READMIT <b>12.4%</b></span></div>
+      <summary>
+        <div>
+          <h3>Healthcare Executive Dashboard</h3>
+          <p class="proj-summary">A single cross-facility view of volume, revenue, and quality for hospital leadership.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — Hospital leadership lacked a single view of volume, revenue, and quality metrics across facilities, forcing manual month-end roll-ups.</p>
+        <p class="proj-field"><b>Data sources</b> — EHR admissions/discharges, patient accounting, quality registries.</p>
+        <p class="proj-field"><b>ETL process</b> — Azure Data Factory pipelines landing raw feeds, transformed through staging → curated layers in a Lakehouse.</p>
+        <p class="proj-field"><b>Data model</b> — Star schema: fact_encounters linked to dim_patient, dim_facility, dim_payer, dim_date.</p>
+        <p class="proj-field"><b>KPIs</b> — Admit rate, average length of stay, readmission rate, net revenue per encounter.</p>
+        <p class="proj-field"><b>Technologies</b> — Power BI, Azure Data Factory, SQL Server, DAX.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>SLA HIT <b>96.7%</b></span><span>QUEUE <b>−12%</b></span><span>THROUGHPUT <b>+9%</b></span></div>
+      <summary>
+        <div>
+          <h3>Operational Dashboard</h3>
+          <p class="proj-summary">Near-real-time queue and SLA visibility for operations managers across shifts.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — Operations managers needed near-real-time visibility into queue backlogs and SLA breaches across shifts.</p>
+        <p class="proj-field"><b>Data sources</b> — Ticketing system exports, workforce scheduling, call-center logs.</p>
+        <p class="proj-field"><b>ETL process</b> — Scheduled pipelines orchestrating hourly loads into Snowflake, with incremental change capture.</p>
+        <p class="proj-field"><b>Data model</b> — Snowflake schema separating shift, agent, and queue dimensions from ticket-level facts.</p>
+        <p class="proj-field"><b>KPIs</b> — SLA attainment, average queue time, throughput per shift.</p>
+        <p class="proj-field"><b>Technologies</b> — Tableau, Snowflake, SQL, Alteryx.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>HEDIS <b>91.4</b></span><span>DENIAL <b>6.8%</b></span><span>CLEAN CLAIM <b>93%</b></span></div>
+      <summary>
+        <div>
+          <h3>Claims &amp; HEDIS Reporting Dashboard</h3>
+          <p class="proj-summary">Automated HEDIS measure tracking alongside claims denial trending for a health plan quality team.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — Health plan quality teams needed automated HEDIS measure tracking alongside claims denial trending ahead of NCQA submission.</p>
+        <p class="proj-field"><b>Data sources</b> — Claims (837/835), enrollment/eligibility, HEDIS measure engine output.</p>
+        <p class="proj-field"><b>ETL process</b> — Informatica pipelines standardizing claim codes and mapping to measure specifications.</p>
+        <p class="proj-field"><b>Data model</b> — fact_claims and fact_measure_compliance joined on member and measurement-year dimensions.</p>
+        <p class="proj-field"><b>KPIs</b> — HEDIS composite score, denial rate, clean claim rate.</p>
+        <p class="proj-field"><b>Technologies</b> — Power BI, Informatica, Oracle, DAX.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>RISK SCORE <b>1.12</b></span><span>ED VISITS <b>−7%</b></span><span>GAPS CLOSED <b>+15%</b></span></div>
+      <summary>
+        <div>
+          <h3>Population Health Dashboard</h3>
+          <p class="proj-summary">Rising-risk member identification and care-gap closure tracking for care management.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — Care management teams needed to identify rising-risk members and track care-gap closure across attributed populations.</p>
+        <p class="proj-field"><b>Data sources</b> — Claims, clinical/EHR extracts, risk-adjustment scores, care-gap registries.</p>
+        <p class="proj-field"><b>ETL process</b> — Alteryx workflows handling risk-score computation and gap logic, feeding Power BI.</p>
+        <p class="proj-field"><b>Data model</b> — Member-centric star schema with slowly changing dimensions for risk tier history.</p>
+        <p class="proj-field"><b>KPIs</b> — Average risk score, ED utilization rate, care-gap closure rate.</p>
+        <p class="proj-field"><b>Technologies</b> — Power BI, Alteryx, SQL Server.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>ADHERENCE <b>84%</b></span><span>GENERIC <b>76%</b></span><span>PMPM <b>$38.20</b></span></div>
+      <summary>
+        <div>
+          <h3>Pharmacy Analytics Dashboard</h3>
+          <p class="proj-summary">Medication adherence and drug-spend visibility for PBM stakeholders.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — PBM stakeholders needed visibility into medication adherence, generic substitution rates, and per-member drug spend trends.</p>
+        <p class="proj-field"><b>Data sources</b> — Pharmacy claims, formulary tables, member eligibility.</p>
+        <p class="proj-field"><b>ETL process</b> — Microsoft Fabric pipelines refreshing nightly, with adherence logic computed in DAX and Power Query.</p>
+        <p class="proj-field"><b>Data model</b> — fact_pharmacy_claims joined to dim_drug, dim_member, dim_date.</p>
+        <p class="proj-field"><b>KPIs</b> — Medication adherence (PDC), generic dispensing rate, PMPM drug cost.</p>
+        <p class="proj-field"><b>Technologies</b> — Power BI, Microsoft Fabric, DAX, Power Query.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>MIGRATED <b>140 TB</b></span><span>DOWNTIME <b>&lt;2h</b></span><span>COST <b>−31%</b></span></div>
+      <summary>
+        <div>
+          <h3>Tableau → Power BI Migration</h3>
+          <p class="proj-summary">Enterprise dashboard migration with side-by-side KPI validation.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — An enterprise Tableau estate was hitting scale and licensing-cost limits; leadership needed a low-risk path to Power BI without breaking trusted reports.</p>
+        <p class="proj-field"><b>Data sources</b> — Existing Tableau workbooks, underlying SQL Server/Snowflake sources.</p>
+        <p class="proj-field"><b>ETL process</b> — Phased migration with parallel-run validation between Tableau and Power BI outputs before cutover.</p>
+        <p class="proj-field"><b>Data model</b> — Recreated calculations, parameters, and KPIs as Power BI semantic models and DAX measures.</p>
+        <p class="proj-field"><b>KPIs</b> — Data volume migrated, cutover downtime, licensing cost reduction.</p>
+        <p class="proj-field"><b>Technologies</b> — Power BI, Tableau, DAX, Snowflake.</p>
+      </div>
+    </details>
+
+    <details class="project-card">
+      <div class="project-card__kpis"><span>QUERY TIME <b>−68%</b></span><span>TABLES <b>210</b></span><span>USERS ONBOARDED <b>320</b></span></div>
+      <summary>
+        <div>
+          <h3>Cloud Data Warehouse on Microsoft Fabric</h3>
+          <p class="proj-summary">A governed, query-fast Lakehouse replacing scattered spreadsheets and siloed extracts.</p>
+        </div>
+        <span class="chev">▾</span>
+      </summary>
+      <div class="project-card__body">
+        <p class="proj-field"><b>Business problem</b> — Finance and analytics teams needed a governed, query-fast warehouse to replace scattered spreadsheets and siloed extracts.</p>
+        <p class="proj-field"><b>Data sources</b> — Databricks source systems, claims feeds, provider datasets.</p>
+        <p class="proj-field"><b>ETL process</b> — Microsoft Fabric Data Factory pipelines ingesting into OneLake, orchestrated and monitored for reliability.</p>
+        <p class="proj-field"><b>Data model</b> — Governed semantic models on Fabric SQL Endpoints and Lakehouse datasets.</p>
+        <p class="proj-field"><b>KPIs</b> — Query latency reduction, tables migrated, active self-service users.</p>
+        <p class="proj-field"><b>Technologies</b> — Microsoft Fabric, OneLake, Power BI, Databricks.</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a class="nav__mark" href="index.html">RSP<span>·</span></a>
+      <p>Senior Data Analyst and BI Developer specializing in healthcare and health-insurance analytics.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="stack.html">Stack</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Quick Actions</h4>
+      <ul>
+        <li><a href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Download Résumé</a></li>
+        <li><a href="contact.html">Get In Touch</a></li>
+        <li><a href="projects.html">View Projects</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span data-year></span> Ravneet Singh Pahwa</span>
+    <span>Press ⌘K / Ctrl+K to search this site</span>
+  </div>
+</footer>
+
+<div class="cmdk-overlay" id="cmdk-overlay">
+  <div class="cmdk">
+    <input class="cmdk__input" id="cmdk-input" type="text" placeholder="Type a command or search…" autocomplete="off">
+    <div class="cmdk__list" id="cmdk-list"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

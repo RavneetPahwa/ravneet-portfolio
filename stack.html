@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stack — Ravneet Singh Pahwa</title>
+<meta name="description" content="Technical stack of Ravneet Singh Pahwa — Power BI, Tableau, SQL Server, Snowflake, Alteryx, Microsoft Fabric, and more.">
+<meta property="og:title" content="Stack — Ravneet Singh Pahwa">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__mark" href="index.html">RSP<span>·</span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="stack.html" class="is-active">Stack</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav__kbd" data-cmdk-open type="button"><span>Search</span><kbd>&#8984;K</kbd></button>
+  <a class="nav__cta" href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Résumé</a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="page-hero">
+  <p class="eyebrow">Technical Stack</p>
+  <h1>The tools, by function.</h1>
+  <p class="section__note">Sixteen years of BI tooling, organized the way I actually use it — visualization down to raw query.</p>
+</div>
+
+<section class="section section--tight">
+  <div class="skills__grid">
+    <div class="skill-card">
+      <h3><span class="tag-idx">BI</span>BI &amp; Visualization</h3>
+      <div class="pills"><span>Power BI</span><span>Tableau</span><span>SSRS</span><span>Cognos</span><span>QlikView</span></div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">DB</span>Databases</h3>
+      <div class="pills"><span>SQL Server</span><span>Oracle</span><span>Redshift</span><span>Snowflake</span><span>Databricks</span></div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">CL</span>Cloud</h3>
+      <div class="pills"><span>Azure</span><span>Google Cloud Platform</span><span>Microsoft Fabric</span></div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">ET</span>ETL</h3>
+      <div class="pills"><span>Alteryx</span><span>Informatica</span><span>DataStage</span><span>Azure Data Factory</span><span>Fabric Pipelines</span></div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">PR</span>Programming &amp; Query</h3>
+      <div class="pills"><span>SQL</span><span>PL/SQL</span><span>DAX</span><span>Power Query (M)</span></div>
+    </div>
+    <div class="skill-card">
+      <h3><span class="tag-idx">DM</span>Data Modeling</h3>
+      <div class="pills"><span>Star Schema</span><span>Dimensional Modeling</span><span>Semantic Models</span><span>Row-Level Security</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a class="nav__mark" href="index.html">RSP<span>·</span></a>
+      <p>Senior Data Analyst and BI Developer specializing in healthcare and health-insurance analytics.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="stack.html">Stack</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Quick Actions</h4>
+      <ul>
+        <li><a href="assets/Ravneet_Singh_Pahwa_Resume.pdf" download>Download Résumé</a></li>
+        <li><a href="contact.html">Get In Touch</a></li>
+        <li><a href="projects.html">View Projects</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span data-year></span> Ravneet Singh Pahwa</span>
+    <span>Press ⌘K / Ctrl+K to search this site</span>
+  </div>
+</footer>
+
+<div class="cmdk-overlay" id="cmdk-overlay">
+  <div class="cmdk">
+    <input class="cmdk__input" id="cmdk-input" type="text" placeholder="Type a command or search…" autocomplete="off">
+    <div class="cmdk__list" id="cmdk-list"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
